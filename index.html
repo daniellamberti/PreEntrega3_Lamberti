@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entrega 3 Daniel Lamberti</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1>Promedios finales para alumnos de Conservatorio</h1>
+        <br>
+
+        <div id="formulario-nombre" class="formulario">
+
+            <div class="container">
+                <h2>Bienvenido. Ingresa tu nombre y apellido</h2>
+
+                <input id="input-nombre" placeholder="Nombre y Apellido">
+                <button id="enviarSaludo">Ok</button>
+            </div>
+        </div>
+        <p id="saludar"></p>
+
+
+
+
+                                <!-- Formulario para ingreso notas Instrumento -->
+
+        <h2>Notas de asignatura INSTRUMENTO</h2>
+
+        <form id="formInst">
+            <label for="examen1">Ingresa la nota de tu examen 1 de Instrumento: </label>
+            <input type="text" id="instrumento1">
+            <br><br>
+
+            <label for="examen2"> Ingresa la nota de tu examen 2 de Instrumento: </label>
+            <input type="text" id="instrumento2">
+            <br><br>
+
+            <label for="examen3">Ingresa la nota de tu examen 3 de Instrumento: </label>
+            <input type="text" id="instrumento3">
+            <br><br>
+
+            <button>Enviar</button>
+            <br>
+            <p id="botonInstAqui"></p>
+            <p id="aprobAquiInst"></p>
+
+        </form>
+
+        <br><br>
+        <div id="contenedor"></div>
+
+                                <!-- Formulario para ingreso notas Teoria -->
+
+
+        <h2>Notas de asignatura TEORIA</h2>
+
+        <form id="formTeor">
+            <label for="examen1">Ingresa la nota de tu examen 1 de Teoria: </label>
+            <input type="text" id="teoria1">
+            <br><br>
+
+            <label for="examen2"> Ingresa la nota de tu examen 2 de Teoria: </label>
+            <input type="text" id="teoria2">
+            <br><br>
+
+            <label for="examen3">Ingresa la nota de tu examen 3 de Teoria: </label>
+            <input type="text" id="teoria3">
+            <br><br>
+
+            <label for="examen4">Ingresa la nota de tu examen 4 de Teoria: </label>
+            <input type="text" id="teoria4">
+            <br><br>
+
+            <label for="examen5">Ingresa la nota de tu examen 5 de Teoria: </label>
+            <input type="text" id="teoria5">
+            <br><br>
+
+            <button>Enviar</button>
+            <br>
+            <p id="botonTeorAqui"></p>
+            <p id="aprobAquiTeor"></p>
+
+
+        </form>
+        <br><br>
+
+                                <!-- Formulario para ingreso notas Armonia -->
+
+
+        <h2>Notas de asignatura ARMONIA</h2>
+
+
+
+        <form id="formArm">
+            <label for="examen1">Ingresa la nota de tu examen 1 de Armonia: </label>
+            <input type="text" id="armonia1">
+            <br><br>
+
+            <label for="examen2"> Ingresa la nota de tu examen 2 de Armonia: </label>
+            <input type="text" id="armonia2">
+            <br><br>
+
+            <label for="examen3">Ingresa la nota de tu examen 3 de Armonia: </label>
+            <input type="text" id="armonia3">
+            <br><br>
+
+            <label for="examen4">Ingresa la nota de tu examen 4 de Armonia: </label>
+            <input type="text" id="armonia4">
+            <br><br>
+
+            <button>Enviar</button>
+            <br>
+            <p id="botonArmAqui"></p>
+            <p id="aprobAquiArm"></p>
+
+        </form>
+        <br><br>
+
+
+                                <!-- Formulario para ingreso notas Ensamble -->
+
+
+        <h2>Notas de asignatura ENSAMBLE</h2>
+
+        <form id="formEns">
+            <label for="examen1">Ingresa la nota de tu examen 1 de Ensamble: </label>
+            <input type="text" id="ensamble1">
+            <br><br>
+
+            <label for="examen2"> Ingresa la nota de tu examen 2 de Ensamble: </label>
+            <input type="text" id="ensamble2">
+            <br><br>
+
+            <label for="examen3">Ingresa la nota de tu examen 3 de Ensamble: </label>
+            <input type="text" id="ensamble3">
+            <br><br>
+
+            <button>Enviar</button>
+            <br>
+            <p id="botonEnsAqui"></p>
+            <p id="aprobAquiEns"></p>
+
+        </form>
+        <br><br>
+
+        <h2>Te recordamos que las notas promedios finales de las 4 materias son:</h2>
+
+        <button id="verPromedios">Ver Promedios</button>
+
+        <ul id="listadoPromedios">
+        </ul>
+
+        <h2>Te detallamos a continuacion las notas de todos los examenes rendidos en cada materia:</h2>
+        <button id="verNotas">Ver Notas Obtenidas</button>
+
+        <ul id="listadoNotas">
+        </ul>
+
+        <script src="main.js"></script>
+    </body>
+</html>

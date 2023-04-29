@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    line-height: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.parrafo {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+main {
+    margin: auto;
+}
+
+main p {
+    font-size: 1.5rem;
+}
