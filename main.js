@@ -16,6 +16,13 @@ class Estudiante {
 }
 */
 
+    // Se resetean los valores acumulados en el Local Storage para permitir su posterior actualización
+
+localStorage.setItem("Teoria",JSON.stringify([]));
+localStorage.setItem("Armonia",JSON.stringify([]));
+localStorage.setItem("Ensamble",JSON.stringify([]));
+localStorage.setItem("Instrumento",JSON.stringify([]));
+
         // Se crean las variables necesarias para el formulario de ingreso nombre y apellido del usuario.
 
 let nombreAlumno="";
@@ -118,6 +125,10 @@ formInst.addEventListener("submit", (e)=>{
     notasInst[1] = exInst2;
     notasInst[2] = exInst3;
 
+    // Se guarda el array que contiene todas las notas de los exámenes de Instrumento en el Local Storage
+
+    localStorage.setItem("Instrumento",JSON.stringify(notasInst));
+
     // Se revisa con un console.log que los datos ingresados por el usuario se almacenaron correctamente.
 
     console.log(`Notas de Instrumento son ${notasInst};`);
@@ -140,7 +151,6 @@ aprobadoReprobado("Instrumento",notaFinalInst,"aprobAquiInst");
     formInst.reset();
 
 })
-
 
                 // Se crean las variables para las notas de los examenes de Teoria.
 
@@ -184,6 +194,10 @@ formTeor.addEventListener("submit", (e)=>{
     notasTeor[2] = exTeor3;
     notasTeor[3] = exTeor4;
     notasTeor[4] = exTeor5;
+
+    // Se guarda el array que contiene todas las notas de los exámenes de Teoría en el Local Storage.
+
+    localStorage.setItem("Teoria",JSON.stringify(notasTeor));
 
      // Se revisa con un console.log que los datos ingresados por el usuario se almacenaron correctamente.
 
@@ -245,6 +259,10 @@ formArm.addEventListener("submit", (e)=>{
     notasArm[2] = exArm3;
     notasArm[3] = exArm4;
 
+    // Se guarda el array que contiene todas las notas de los exámenes de Armonía en el Local Storage
+
+localStorage.setItem("Armonia",JSON.stringify(notasArm));
+
      // Se revisa con un console.log que los datos ingresados por el usuario se almacenaron correctamente.
 
 console.log(`Notas de Armonia son ${notasArm};`);
@@ -298,6 +316,10 @@ formEns.addEventListener("submit", (e)=>{
     notasEns[0] = exEns1;
     notasEns[1] = exEns2;
     notasEns[2] = exEns3;
+
+    // Se guarda el array que contiene todas las notas de los exámenes de Ensamble en el Local Storage
+
+localStorage.setItem("Ensamble",JSON.stringify(notasEns));
 
     // Se revisa con un console.log que los datos ingresados por el usuario se almacenaron correctamente.
 
@@ -378,19 +400,5 @@ console.log(notaPromFinal);
 
                 // Implementación del uso de Local Storage para futuro procesamiento
 
-localStorage.setItem("1", "Hola Mundo");
-localStorage.setItem("2", 1234);
-localStorage.setItem("3", true);
-
-arrayPrueba = [4, 5, 6, 7];
-
-let recup1 = localStorage.getItem("1");
-console.log(recup1);
-
-let recup2 = localStorage.getItem("2");
-console.log(recup2);
-
-let recup3 = localStorage.getItem("3");
-console.log(recup3);
 
 
