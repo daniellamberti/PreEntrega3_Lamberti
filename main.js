@@ -393,12 +393,9 @@ const botonNotas = document.getElementById("verNotas");
     listadoNotas.appendChild(li);
 })
 
-let notaPromFinal = 0;
-notaPromFinal = (notaFinalInst + notaFinalTeor + notaFinalArm + notaFinalEns) / 4;
-console.log(notaPromFinal);
+ 
 
 
-                // Implementación del uso de Local Storage para futuro procesamiento
 
 
 
